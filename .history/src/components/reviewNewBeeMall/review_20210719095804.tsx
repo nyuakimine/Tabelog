@@ -30,6 +30,7 @@ interface MatchParams {
 }
 
 export const ReviewNewBeeMall: React.FC<pIf> = () => {
+  let input = React.createRef<HTMLInputElement>();
   const { goodsId } = useParams<MatchParams>();
 
   const initialList = useSelector(
@@ -51,6 +52,7 @@ export const ReviewNewBeeMall: React.FC<pIf> = () => {
 
   const ids = initialList.map((item) => item.id);
 
+  // const reviewId = initialList.map((item) => item.id) && showMoreList.map((item) => item.id);
   const showMoreReviewsBtn = (e) => {
     dispatch(fetchOpenAndCloseDataActionCreator({ goodsId, ids }));
     const showList = document.getElementsByClassName(

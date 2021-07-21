@@ -50,7 +50,7 @@ function App() {
           <Route path="/search/:keywords?" component={SearchPage} />
           <Route path="/shoppingMall" component={ShoppingMall} />
           <Route path="/newBeeMalldetail/:goodsId" component={NewBeeMallDetail} /> 
-          <Route path="/tabelog/:id" component={Tabelog} />
+          <Route path="/tabelog" component={Tabelog} />
           <PrivateRoute
             isAuthenticated={jwt !== null}
             path="/shoppingCart"

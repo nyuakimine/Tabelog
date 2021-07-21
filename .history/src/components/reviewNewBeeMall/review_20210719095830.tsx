@@ -30,6 +30,7 @@ interface MatchParams {
 }
 
 export const ReviewNewBeeMall: React.FC<pIf> = () => {
+  let input = React.createRef<HTMLInputElement>();
   const { goodsId } = useParams<MatchParams>();
 
   const initialList = useSelector(

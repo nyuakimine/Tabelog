@@ -4,14 +4,26 @@ import { fetchDetailTitleDataActionCreator } from "../../redux/detailTitle/fetch
 import "../../pages/tabelog/tabelog1.css";
 import "../../pages/tabelog/tabelog2.css";
 import { RootState } from "../../redux/store";
+import { RouteComponentProps, useParams } from "react-router-dom";
+// interface ifProps {
+//   id: any;
+//   name: string;
+//   star: string;
+//   score: string;
+//   commentNum: string;
+//   answerDate: string;
+//   saveNum: string;
+// }
+// interface pIf {
+//   data: ifProps;
+// }
 
 
 export const DetailTitle: React.FC= () => {
 
   const tabelog = useSelector((state:RootState) => state.detailTitleListSlice.data);
-
  
-  return tabelog === null ?(
+  return tabelog === null ? (
     <h2>loading...</h2>
   ) : (
     <div className="rdheader-title-data">
@@ -78,7 +90,7 @@ export const DetailTitle: React.FC= () => {
                 <i className="c-rating__star rdheader-rating__score-star"></i>
                 <b className="c-rating__val rdheader-rating__score-val">
                   {/* rel="v:rating" */}
-                  <span className="rdheader-rating__score-val-dtl">{tabelog[0].score}</span>
+                  <span className="rdheader-rating__score-val-dtl">3.25</span>
                 </b>
               </p>
             </div>

@@ -90,7 +90,7 @@ export const DetailTitle: React.FC= () => {
                   property=""
                   href="https://tabelog.com/tokyo/A1302/A130201/13019285/dtlrvwlst/"
                 >
-                  <i>口コミ</i> <em className="num">{tabelog[0].commentNum}</em>{" "}
+                  <i>口コミ</i> <em className="num">{tabelog.commentNum}</em>{" "}
                   <span className="unit">件</span>
                 </a>{" "}
               </span>

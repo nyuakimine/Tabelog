@@ -35,7 +35,7 @@ export const ShoppingMall: React.FC = () => {
       s.newAndRecommendGoodses.newAndReGoodsesList.data.recommendGoodses
   );
   const onMouseOverHandler = (e) => {
-    //debugger;
+    debugger;
     console.log(e.currentTarget);
 
     const sortList = document.getElementsByClassName("all-sort-list")[0];

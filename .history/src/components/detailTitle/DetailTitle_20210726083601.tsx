@@ -9,9 +9,8 @@ import { RootState } from "../../redux/store";
 export const DetailTitle: React.FC= () => {
 
   const tabelog = useSelector((state:RootState) => state.detailTitleListSlice.data);
-
  
-  return tabelog === null ?(
+  return tabelog === null ? (
     <h2>loading...</h2>
   ) : (
     <div className="rdheader-title-data">

@@ -25,7 +25,7 @@ import {newBeeMallOpenAndCloseSlice} from './OpenCloseReviewSlice/openCloseRevie
 import {newBeeMallQaInsertSlice} from './qaInsertSlice/fetchQaInsertSlice'
 import {newBeeMallHelpNumSlice} from './reviewHelpNumSlice/reviewHelpNumSlice'
 import {tabelogDetailTitleSlice} from './detailTitle/fetchDetailTitleListSlice'
-import {tabelogRestaurantDescSlice} from './restaurantDesc/restaurantDesc'
+import {tabelogCommentTotalSlice} from './tbCommentTotal/tbCommentTotal'
 const persistConfig = {
   key: "root",
   storage,
@@ -54,7 +54,7 @@ const rootReducer = combineReducers({
     qaInsertSlice: newBeeMallQaInsertSlice.reducer,
     insertHelpNum: newBeeMallHelpNumSlice.reducer,
     detailTitleListSlice: tabelogDetailTitleSlice.reducer,
-    restaurantDescSlice: tabelogRestaurantDescSlice.reducer,
+    commentTotalListSlice: tabelogCommentTotalSlice.reducer,
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
